@@ -1,0 +1,19 @@
+{
+  "name": "aljehad-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AL-JEHAD Project Control — mobile app (wraps aljehad-projects.netlify.app)",
+  "scripts": {
+    "add:android": "cap add android && node scripts/patch-native.mjs android && capacitor-assets generate --android --iconBackgroundColor '#0E332B' --iconBackgroundColorDark '#0E332B' --splashBackgroundColor '#0E332B' --splashBackgroundColorDark '#0E332B' && cap sync android",
+    "add:ios": "cap add ios && node scripts/patch-native.mjs ios && capacitor-assets generate --ios --iconBackgroundColor '#0E332B' --splashBackgroundColor '#0E332B' --splashBackgroundColorDark '#0E332B' && cap sync ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^4.0.0",
+    "@capacitor/cli": "^8.0.0"
+  }
+}

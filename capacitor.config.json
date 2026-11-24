@@ -1,0 +1,12 @@
+{
+  "appId": "com.aljehad.projectcontrol",
+  "appName": "AL-JEHAD",
+  "webDir": "www",
+  "server": {
+    "url": "https://aljehad-projects.netlify.app",
+    "cleartext": false,
+    "errorPath": "offline.html"
+  },
+  "android": { "backgroundColor": "#0E332B" },
+  "ios": { "backgroundColor": "#0E332B", "contentInset": "never", "limitsNavigationsToAppBoundDomains": false }
+}
